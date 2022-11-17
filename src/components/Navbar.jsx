@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -22,10 +23,18 @@ function Example(args) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/contacts">Contact</NavLink>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink>
+                <Link to="/">Home</Link>
+              </NavLink>
+              <NavLink>
+                <Link to="/about">About</Link>
+              </NavLink>
+              <NavLink>
+                <Link to="/contact">Contact</Link>
+              </NavLink>
+              <NavLink>
+                <Link to="/projects">Projects</Link>
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>

@@ -9,8 +9,8 @@ import Example from "./components/Navbar";
 function App() {
   return (
     <div className="App">
-      <Example></Example>
       <Router>
+        <Example></Example>
         <Routes>
           <Route element={<Home />} path="/" exact />
           <Route element={<About />} path="/about" />
